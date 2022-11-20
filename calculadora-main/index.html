@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Calculadora">
+      <meta name="keywords" content="calculadora, suma, resta, división, multiplicación">
+      <meta name="author" content="Mateo">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+      <link rel="stylesheet" href="_css/estilo.css">
+      <title>Calculadora</title>
+   </head>
+   <body>
+      <div class="contenedor">
+      <h1>Calculadora</h1>
+         <form class="calculadora" name="calculadora">
+            <input type="text" class="campo" readonly name="texto">
+            <span class="numero borrar" onClick="calculadora.texto.value=''">
+            <i>C</i>
+            </span>
+            <span class="numero" onClick="calculadora.texto.value+='/'">
+            <i>/</i>
+            </span>
+            <span class="numero" onClick="calculadora.texto.value+='*'">
+            <i>*</i>
+            </span>
+            <span class="numero" onClick="calculadora.texto.value+='7'">
+            <i>7</i>
+            </span>
+            <span class="numero" onClick="calculadora.texto.value+='8'">
+            <i>8</i>
+            </span>
+            <span class="numero" onClick="calculadora.texto.value+='9'">
+            <i>9</i>
+            </span>
+            <span class="numero" onClick="calculadora.texto.value+='-'">
+            <i>-</i>
+            </span>            	
+            <span class="numero" onClick="calculadora.texto.value+='4'">
+            <i>4</i>
+            </span>            	
+            <span class="numero" onClick="calculadora.texto.value+='5'">
+            <i>5</i>
+            </span>            	
+            <span class="numero" onClick="calculadora.texto.value+='6'">
+            <i>6</i>
+            </span>            	
+            <span class="numero suma" onClick="calculadora.texto.value+='+'">
+            <i>+</i>
+            </span>            	
+            <span class="numero" onClick="calculadora.texto.value+='1'">
+            <i>1</i>
+            </span>            	
+            <span class="numero" onClick="calculadora.texto.value+='2'">
+            <i>2</i>
+            </span>
+            <span class="numero" onClick="calculadora.texto.value+='3'">
+            <i>3</i>
+            </span>
+            <span class="numero" onClick="calculadora.texto.value+='0'">
+            <i>0</i>
+            </span>
+            <span class="numero" onClick="calculadora.texto.value+='00'">
+            <i>00</i>
+            </span>
+            <span class="numero" onClick="calculadora.texto.value+='.'">
+            <i>.</i>
+            </span>
+            <span class="numero igual" onClick="document.calculadora.texto.value=eval(calculadora.texto.value)">
+            <i>=</i>
+            </span>
+         </form>
+      </div>
+   </body>
+</html>
